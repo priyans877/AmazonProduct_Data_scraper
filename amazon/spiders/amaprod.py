@@ -58,9 +58,9 @@ class AmaprodSpider(scrapy.Spider):
         
         #Saving Product Data Value From sites into Text file
         
-        with open("my_file2.txt",'a+') as F:
+        with open("my_file1.txt",'a+') as F:
             for i in range(len(name)):
-                F.write(f"\nName : {name[i]}\nPrice :{price[i]}\nRating :{rating[i]}\nGlobal ratingCount : {no_of_review[i]}\nAvailabel bankoffer :{bankoffer_count[i]}\n")
+                F.write(f"\nName : {name[i]}\nPrice :{price[i]}\nRating :{rating[i]}\nGlobal rating Count : {no_of_review[i]}\nAvailable bankoffer :{bankoffer_count[i]}\n")
                 F.write("---------"*6)
             F.close()   
             
